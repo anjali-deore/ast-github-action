@@ -32,3 +32,6 @@ else
   echo "Scan failed"
   exit $exitCode
 fi
+
+echo "Running command: $@"
+exec  "$@"
